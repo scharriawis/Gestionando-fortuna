@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(../img/logocafemolido.jpg);
+    background-position: center center;
+}
+/*color, anchor, altura y posición del encabezado*/
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    height: 87px;
+    background-color: #f12407;
+    align-items: center;
+    padding: 0px;
+    letter-spacing: 0.1cm;
+
+}
+/*posición del logo*/
+
+.logoF {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 2.5%;
+    z-index: 5;
+}
+/*tipo de letra, tamaño y color del encabezado*/
+.nav-link{
+    font-weight: 600px;
+    padding-right: 30px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-link:hover{
+    color: rgb(80, 2, 2);
+}
+
+
+@media(max-width:700px){
+    .header{
+        flex-direction: column;
+    }
+
+    .nav{
+        padding: 200px 50px;
+    }
+}
+/*empieza el slider*/
+
+.slider{ 
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+/*animación y tamaño del slider*/
+.slider ul{
+    display: flex;
+    padding: auto;
+    width: 105%;
+
+    animation: cambio 20s infinite;
+    animation-direction: initial;
+    
+}
+
+.slider li{
+    list-style: none;
+
+}
+/*tamaño de las imagenes del slider*/
+
+.slider img {
+    height: 85.5vh;
+}
+/*la durabilidad de slider al paso de las imagenes*/
+
+@keyframes cambio {
+
+    0% {margin-left:  0;}
+    20% { margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    75% {margin-left: -200%;}
+
+    80% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}

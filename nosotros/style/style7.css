@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url(../img/logocafemolido.jpg);
+}
+/*color, anchor y altura de nuestro encabezado*/
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    height: 84px;
+    background-color: #f12407;
+    align-items: center;
+    padding: 0px;
+    letter-spacing: 0.1cm;
+}
+
+/*altura, anchor y forma de nuestro logo*/
+.logoF {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 2.4%;
+    z-index: 5;
+}
+/*tamaño, forma y texto de nuestro encabezado*/
+.nav-link{
+    font-weight: 600px;
+    padding-right: 30px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+}
+.nav-link:hover{
+    color: rgb(80, 2, 2);
+}
+
+
+@media(max-width:700px){
+    .header{
+        flex-direction: column;
+    }
+
+    .nav{
+        padding: 200px 50px;
+    }
+}
+
+div{
+    color: #ffffff;
+    margin-top: 1%;
+}
+/*son el nombre de las clases para poderlas colocar en sitios diferentes*/
+.mision{
+    text-align: left;
+    margin-left: 45%;
+    margin-bottom: 3%;
+}
+
+.vision{
+    text-align: right center;
+    margin-right: 40%;
+    margin-bottom: 3%;
+}
+
+.calidad{
+    text-align: left;
+    margin-left: 45%;
+}
+/*forma de cada titulo*/
+h4{
+    text-align: center;
+    font-size: 23px;
+    border-radius: 10px;
+    padding: 13px;
+    background-color: #f12207a2;
+}
+
+/*forma del texto de la línea p*/
+
+p{
+    font-size: 19px;
+    padding: 10px;
+    color: white;
+}
+
+/*nombramos ciclo a cada clase para poder darle forma a nuestra imagen de apoyo*/
+
+ .ciclo1{
+    width: 135px;
+    height: 145px;
+    border-radius: 200px;
+    float: left;
+    overflow: auto;
+}
+
+.ciclo2{
+    width: 135px;
+    height: 145px;
+    border-radius: 200px;
+    float: right;
+    overflow: auto;
+}
+
+.ciclo3{
+    width: 135px;
+    height: 145px;
+    border-radius: 200px;
+    float: left;
+    overflow: auto;
+}

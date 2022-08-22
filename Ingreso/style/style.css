@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+   background-image: url(../img/logocafemolido.jpg);
+}
+
+/*color, texto, anchor y altura del contenedor*/
+.contenedor{
+    text-align: center;
+    border-top: 3px solid #F12407;
+    border-bottom:3px solid #F12407;
+    background-color: #571b096b;
+    height: 450px;
+    width: 860px;
+    margin-left: 20%;
+    margin-top: 80px;
+}
+/*anchor, altura, fondo y tamaño del recolector de información*/
+.contenedor .campoRegistro{
+    width: 530px;
+    border: 1px solid #571b09d8;
+    margin: 20px;
+    padding: 12px;
+    background: whitesmoke;
+    font-size: 18px;
+    border-radius: 5px;
+}
+/*color, altura, anchor y letra del botón de envio de información*/
+.button{
+    width: 530px;
+    height: 40px;
+    background: #F12407;
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-bottom: 40px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.hasOlvidado{
+    color: rgb(253, 250, 250);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+/*tamaño y color del los texto de ayudas*/
+.crearContraseña{
+    color: rgb(252, 246, 246);
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.noTiene {
+    color: rgb(251, 253, 255);
+    font-size: 20px;
+}
+
+/*forma del logo*/
+.logo {
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
