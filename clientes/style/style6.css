@@ -99,10 +99,29 @@ html {
     font-size: 20px;
 }
 
-.icon_Agregar{
-    display: inline-block;
-    position: absolute;
+.agregar{
     right: 0px;
     bottom: 0px;
-    color: #ffffff;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 100%;
+    font-size: 70px;
+    font-weight: bolder;
+    cursor: pointer;  
+}
+
+.mas{
+    display: inline-block;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#mas{
+    display: none;
+}
+
+#mas:checked ~ .mas{
+    font-size: 50px;
+    transform: rotate(45grad);
+    transition: 2s;
 }
