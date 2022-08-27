@@ -36,7 +36,11 @@ body {
     color: #ffffff;
 }
 .nav-link:hover{
-    color: rgb(80, 2, 2);
+    color: #f12407;
+    animation: 2s linear;
+    background-color: white;
+    border-radius: 5px;
+    padding: 18px;
 }
 
 

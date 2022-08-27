@@ -1,15 +1,15 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 .clear{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
-
+/*Encabezado*/
 .encabezado{
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,11 @@
     color: #ffffff;
 }
 .nav-link:hover{
-    color: rgb(80, 2, 2);
+    color: #f12407;
+    animation: 2s linear;
+    background-color: white;
+    border-radius: 5px;
+    padding: 18px;
 }
 
 
@@ -50,25 +54,26 @@
         padding: 200px 50px;
     }
 }
-
+/*Fondo*/
 html {
     background-image: url(/clientes/img/logocafemolido.jpg);
-    background-position: center center;
     background-repeat: no-repeat;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
-
+/*Contenedor del proceso de los clientes*/
 .contenedor{
-    background-color: #f122078f;
+    background-color: #a314018a;
     position: fixed;
     max-width: 900px;
     min-height: 450px;
-    margin-top: 40px;
+    margin-top: 5%;
     left: 15%;
     right: 10%;
 }
-
+/*Contenedor para buscar a los clientes*/
 .campo_Busqueda{
+    display: flex;
     position: relative;
     top: 5px;
     margin: auto;
@@ -76,9 +81,8 @@ html {
     max-width: 55%;
     min-height: 35px;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: #fff;
 }
-
 .icon_Busqueda{
     display: none;
     position: relative;
@@ -88,7 +92,6 @@ html {
     font-size: 19px;
     text-align: justify;
 }
-
 .busqueda{
     position: relative;
     top: 4px;
@@ -99,6 +102,7 @@ html {
     font-size: 20px;
 }
 
+/*Botón para funcion agregar clientes*/
 .agregar{
     right: 0px;
     bottom: 0px;
@@ -109,19 +113,128 @@ html {
     font-weight: bolder;
     cursor: pointer;  
 }
-
 .mas{
     display: inline-block;
     font-size: 40px;
     cursor: pointer;
 }
-
 #mas{
     display: none;
 }
-
 #mas:checked ~ .mas{
     font-size: 50px;
     transform: rotate(45grad);
-    transition: 2s;
+    transition: all 600ms ease;
+}
+
+/*formulario para registrar a los clientes*/
+.forma{
+    display: none;
+    position: absolute;
+    max-width: 100%;
+    width: 70%;
+    max-height: 90%;
+    margin: 0% 23%;
+}
+.nombre_Apellido_Registro{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: normal;
+    gap: 16px;
+    margin-top: 30px;
+}
+.email_Movil_Registro, .contenedor_Password{
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+    width: 50%;
+}
+.fecha_Registro{
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+.fecha_Registro select{
+    padding: 3px;
+    font-family: sans-serif;
+    border: none;
+    border-radius: 4px;
+}
+.genero_Registro{
+    display: flex;
+    gap: 15px;
+}
+.genero_Registro span{
+    background-color: #fff;
+    letter-spacing: 0.5px;
+    font-size: 1em;
+    padding: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+
+}
+.btn_Registro{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-top: 15px;
+}
+.forma button[type="submit"]{
+    letter-spacing: normal;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    border-radius: 4px; 
+}
+.forma button[type="submit"]:hover{
+    background-color: transparent;
+    transition: all 0.5s linear;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    border-radius: 0px;
+}
+.nombre_Apellido_Registro, .email_Movil_Registro, .password_Registro{
+    margin-bottom: 20px;
+}
+.fecha_Nacimiento, .sexo_Registro{
+    font-size: 12px;
+    color: #1c1e21 ;
+    line-height: 20px;
+    font-weight: bolder;
+}
+
+.fecha_Icon_Nacimiento, .sexo_Icon_Registro{
+    color: #1c1e21;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+/*Todos los input del formulario*/
+.forma input{
+    border: none;
+    font-family: sans-serif;
+    font-size: 1em;
+    outline: none;
+    padding: 5px;
+    border-radius: 4px;
+}
+.forma input:focus, .forma input:hover, .forma input::after, .genero_Registro span:hover{
+    background-color: transparent;
+    transition: all 0.5s linear;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    border-radius: 0px;   
+}
+/*Espacio para el contenedor de los clientes ya agregados*/
+.cliente{
+    position: absolute;
 }

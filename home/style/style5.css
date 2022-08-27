@@ -2,13 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    background-image: url(/home/img/logocafemolido.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
-body {
-    font-family: sans-serif;
-    background-image: url(../img/logocafemolido.jpg);
-    background-position: center center;
-}
+
 /*color, anchor, altura y posición del encabezado*/
 .encabezado{
     display: flex;
@@ -35,11 +38,16 @@ body {
     padding-right: 30px;
     font-size: 24px;
     text-decoration: none;
-    color: #ffffff;
+    color: white;
 }
 .nav-link:hover{
-    color: rgb(80, 2, 2);
+    color: #f12407;
+    animation: 2s linear;
+    background-color: white;
+    border-radius: 5px;
+    padding: 18px;
 }
+
 
 
 @media(max-width:700px){
@@ -78,6 +86,7 @@ body {
 .slider img {
     height: 85.5vh;
 }
+
 /*la durabilidad de slider al paso de las imagenes*/
 
 @keyframes cambio {
